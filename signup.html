@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PROMAN</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Sign-in API -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id" content="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com">
+</head>
+<body>
+  <div class="container">
+    <h2>Signup</h2>
+    <form action="signup.php" method="POST">
+    <form id="loginForm" method="POST" action="login.php">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Username here..." name="username" />
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Password here..." name="password"/>
+      <div class="remember-forgot">
+        <label><input type="checkbox">Remember me</label>
+        <a href="#">Forget password</a>
+      </div>
+      <button type="submit" value="Login" class="Signupbtn" name="Signup_btn">Signup</button>
+      
+    </form>
+    <div id="socialLoginButtons" class="social-login">
+      <div id="googleSignIn" class="g-signin2" data-onsuccess="onGoogleSignIn"></div>
+    </div>
+    <div class="ear-l"></div>
+    <div class="ear-r"></div>
+    <div class="panda-face">
+      <div class="blush-l"></div>
+      <div class="blush-r"></div>
+      <div class="eye-l">
+        <div class="eyeball-l"></div>
+      </div>
+      <div class="eye-r">
+        <div class="eyeball-r"></div>
+      </div>
+      <div class="nose"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="hand-l"></div>
+    <div class="hand-r"></div>
+    <div class="paw-l"></div>
+    <div class="paw-r"></div>
+  </div>
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
